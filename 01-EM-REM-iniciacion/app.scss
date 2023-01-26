@@ -1,0 +1,69 @@
+/* Que debemos de conocer: EM y REM
+- Son medidas realativas
+    REM es relativa a la etqueta <html>
+    EM es realita a su < propia etiqueta>, <etiquetaPadre>,<body> y <html>
+
+
+
+
+Por defecto la etiqueta de html y body tienen un font-size 16px
+
+En el reset para modificarlo tendria que meterse con porcentajes
+
+
+El em mantiene la proporcion a nivel de diseño en cambio el rem no lo hace.
+
+La mejor medida para mantener la proporcion cuando cambiamos algo seria EM
+
+
+Tecnicas
+- padding,margin, el rem para medidas de cajas
+- font-size con em
+
+
+Aunque lo ideal seria todo em
+
+NUNCA UTILIZAR PX ya que no mantiene la proporcion al cambiar fontsize de html
+
+
+
+*/
+
+
+html{ font-size: 62.5%;}/* Para que todas las medidas que tu hagas siempre comienzan por 10px */
+
+body{ font-size: 100%;}
+
+.contenedora{
+    font-size: 100%;
+  
+}
+
+.rem{
+    background-color: lightblue;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+.em{
+
+    background-color: lightblue;
+    padding: 1em 2em;
+    margin: 1em;
+    border-radius: 1em;
+    font-size: 2em;  
+}
+
+.px{
+    background-color: lightblue;
+    padding: 16px 32px;
+    margin: 16px;
+    border-radius: 16px;
+    font-size: 16px;
+
+}
+
+
+
